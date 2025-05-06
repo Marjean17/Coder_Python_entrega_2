@@ -43,9 +43,9 @@ opción seleccionada: """))
            print(cliente)
     else: print("no hay clientes registrados")
 
-  if opcion == 3:  # Modificar cliente
+  if opcion == 3:  #  Modificar cliente
     cliente_buscado = input("\n\rIngrese el Apellido o nro de Dni del cliente a modificar: ")
-    for cliente in lista_clientes:
+    for cliente in lista_clientes: 
         if cliente_buscado == cliente.get_apellido() or cliente_buscado == str(cliente.get_dni()):  # Compara apellido y DNI
             indice = lista_clientes.index(cliente)
             print(f"\n\rCliente encontrado:{cliente_buscado}\n\rRatifique o rectifique los datos del mismo")
